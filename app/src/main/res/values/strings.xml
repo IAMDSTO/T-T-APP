@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">T&amp;T DEF</string>
+    <string name="open">Abrir menú</string>
+    <string name="close">Cerrar menú</string>
+
+    <!-- Define el array de roles -->
+    <string-array name="roles_array">
+        <item>Administrador</item>
+        <item>Usuario</item>
+        <item>Repartidor</item>
+    </string-array>
+
+</resources>
