@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="InicioRepartidor.ListaEnvios.RepartidorListaEnvios"
+    android:padding="16dp">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/listaenvios"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Barra de herramientas -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Título de la barra de herramientas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gestión de Envíos"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="155dp"
+        android:layout_height="63dp"
+        android:alpha="0.7"
+        android:contentDescription="@string/Descripcion_Logo"
+        android:src="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <!-- Título de la sección de pedidos -->
+    <TextView
+        android:id="@+id/ActualizaEstadoPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Lista de Envíos Asignados"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/recycler_view_pedidos" />
+
+    <!-- RecyclerView para mostrar los envíos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_pedidos"
+        android:layout_width="340dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ActualizaEstadoPedido"
+        app:layout_constraintBottom_toTopOf="@id/login_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Botón para ver detalles del envío -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/material_on_background_disabled"
+        android:text="Ver detalles"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/purple"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

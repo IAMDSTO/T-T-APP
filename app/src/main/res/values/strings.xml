@@ -1,13 +1,34 @@
 <resources>
-    <string name="app_name">T&amp;T DEF</string>
+    <!-- Nombre de la aplicación -->
+    <string name="TTDEF">T&amp;T DEF</string>
+
+    <!-- Texto para abrir y cerrar el menú -->
     <string name="open">Abrir menú</string>
     <string name="close">Cerrar menú</string>
 
-    <!-- Define el array de roles -->
+    <!-- Definición de roles de usuario -->
     <string-array name="roles_array">
         <item>Administrador</item>
         <item>Usuario</item>
         <item>Repartidor</item>
     </string-array>
 
+    <!-- Sección de Pantallas y Acciones -->
+    <string name="app_name">Pantallas</string>
+    <string name="Actualizar_Estado">Actualizar Estado</string>
+    <string name="Descripcion_Logo">Logo</string>
+
+    <!-- Opciones para actualizar el estado -->
+    <string-array name="opciones_estado">
+        <item>En trancito</item>
+        <item>Entregado</item>
+        <item>Perdido</item>
+    </string-array>
+
+    <!-- Opciones de tipo de envío -->
+    <string-array name="tipo_envio_opciones">
+        <item>Envío Rápido</item>
+        <item>Envío Estándar</item>
+        <item>Envío Económico</item>
+    </string-array>
 </resources>

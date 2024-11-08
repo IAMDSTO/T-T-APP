@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Estilo principal de la aplicación (AppTheme).
+        Este estilo hereda de "Theme.AppCompat.Light.DarkActionBar",
+        lo que significa que tendrá un tema con barra de acción oscura y fondo claro.
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Puedes agregar aquí otros atributos personalizados si los necesitas -->
+    </style>
+
+    <!--
+        Estilo personalizado para el menú emergente (PopupMenuTheme).
+        Este estilo es para los menús emergentes (popups) de la aplicación.
+    -->
+    <style name="PopupMenuTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!--
+            Define el color del texto dentro del menú emergente.
+            En este caso, el color es negro.
+        -->
+        <item name="android:textColor">@android:color/black</item>
+
+        <!--
+            Establece el estilo de texto del menú emergente en negrita.
+        -->
+        <item name="android:textStyle">bold</item>
+
+        <!--
+            Establece el fondo del menú emergente. Usamos un fondo seleccionable,
+            lo que hace que tenga un efecto visual cuando el usuario interactúa con él.
+        -->
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+</resources>

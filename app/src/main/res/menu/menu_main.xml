@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/AppTheme">
+
+    <item
+        android:id="@+id/action_3"
+        android:title="Soporte"
+        />
+    <item
+        android:id="@+id/action_4"
+        android:title="Cerrar secion"
+        />
+</menu>
