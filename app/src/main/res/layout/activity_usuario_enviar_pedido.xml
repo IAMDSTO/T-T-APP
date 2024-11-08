@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="InicioUsuario.EnviarPedido.UsuarioEnviarPedido">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="Enviar Pedido"
+        android:textColor="#512DA8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senderNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del remitente"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Campo Nombre del Destinatario -->
+    <EditText
+        android:id="@+id/receiverNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del destinatario"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/senderNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Campo Dirección de Envío -->
+    <EditText
+        android:id="@+id/shippingAddressEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Dirección de envío"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/receiverNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Spinner para Tipo de Envío -->
+    <Spinner
+        android:id="@+id/shippingTypeSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/shippingAddressEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:entries="@array/tipo_envio_opciones" />
+
+    <!-- Botón Enviar Pedido -->
+    <Button
+        android:id="@+id/sendOrderButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar Pedido"
+        android:backgroundTint="#FF6F00"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/shippingTypeSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingVertical="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

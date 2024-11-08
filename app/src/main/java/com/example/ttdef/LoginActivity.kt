@@ -32,7 +32,8 @@ class LoginActivity : AppCompatActivity() {
 
         registerLink.setOnClickListener {
             // Navegar a la actividad de registro
-            startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(
+                Intent(this, RegisterActivity::class.java))
         }
     }
 }
