@@ -6,7 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    android:padding="16dp">
+    android:padding="0dp">
+
+    <ImageView
+        android:id="@+id/backgroundImageVie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/asignarpedidos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/ped_id_pedido"
@@ -14,6 +28,7 @@
         android:layout_height="53dp"
         android:background="@drawable/rounded_edittext"
         android:hint="Ingrese su Id"
+        android:textColorHint="@color/Black"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +43,7 @@
         android:layout_height="53dp"
         android:background="@drawable/rounded_edittext"
         android:padding="12dp"
+        android:textColorHint="@color/Black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -45,6 +61,7 @@
         android:hint="Selecciona hora de entrega"
         android:inputType="none"
         android:padding="16dp"
+        android:textColorHint="@color/Black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,6 +76,7 @@
         android:background="@drawable/rounded_edittext"
         android:hint="Comentarios"
         android:padding="12dp"
+        android:textColorHint="@color/Black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -122,6 +140,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.654" />
 
+
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="191dp"
@@ -133,24 +152,25 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textTITULO_PD"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
         android:text="ASIGNACION DE PEDIDO"
         android:textColor="@color/dark_gray"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.023" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

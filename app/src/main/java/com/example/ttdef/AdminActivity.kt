@@ -17,17 +17,6 @@ class AdminActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin)
 
-        menuButton = findViewById(R.id.menu_button)
-        menuOptions = findViewById(R.id.menu_options)
-
-        // Mostrar/Ocultar el menú cuando se haga clic en el botón "Menú"
-        menuButton.setOnClickListener {
-            menuOptions.visibility = if (menuOptions.visibility == GridLayout.VISIBLE) {
-                GridLayout.GONE
-            } else {
-                GridLayout.VISIBLE
-            }
-        }
 
         // Manejar clic en el botón "Usuarios"
         findViewById<Button>(R.id.button_users).setOnClickListener {
