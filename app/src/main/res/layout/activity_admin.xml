@@ -12,76 +12,193 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/fondo_de_pantalla_app"
-        android:scaleType="centerCrop" />
-
-    <Button
-        android:id="@+id/menu_button"
-        android:layout_width="151dp"
-        android:layout_height="61dp"
-        android:background="@drawable/circular_button"
-        android:text="Menú"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-    <GridLayout
-        android:id="@+id/menu_options"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:rowCount="2"
-        android:columnCount="2"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/menu_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/imgs"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_marginTop="16dp"
+        android:alpha="0.8"/>
+
+    <LinearLayout
+        android:id="@+id/TarjetaUsuario"
+        android:layout_width="285dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.8"
+        android:background="@drawable/bordes_redon"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.862">
+
+        <TextView
+            android:id="@+id/TextUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="Usuario"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DescripcionUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:text="Añadir o eliminar usuario"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/button_users"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_margin="8dp"
-            android:text="Usuarios"
-            android:background="#512da8"
-            android:textColor="@color/orange"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:elevation="4dp" />
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="sans-serif-medium"
+            android:paddingVertical="10dp"
+            android:text="Ver"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TarjetaPedidos"
+        android:layout_width="286dp"
+        android:layout_height="174dp"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.8"
+        android:background="@drawable/bordes_redon"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.213">
+
+        <TextView
+            android:id="@+id/textpedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="Pedidos"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DescripcionPedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:text="Asignar Pedidos"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/button_orders"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_margin="8dp"
-            android:text="Pedidos"
-            android:background="#512da8"
-            android:textColor="@color/orange"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:elevation="4dp" />
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="sans-serif-medium"
+            android:paddingVertical="10dp"
+            android:text="Ver"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TarjetaCancelacion"
+        android:layout_width="289dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.8"
+        android:background="@drawable/bordes_redon"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.54">
+
+        <TextView
+            android:id="@+id/textCancelacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:text="Cancelación"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DescripcionCancelacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:text="Cancelación Pedidos"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/button_cancellations"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_margin="8dp"
-            android:text="Cancelación"
-            android:background="#512da8"
-            android:textColor="@color/orange"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:elevation="4dp" />
-    </GridLayout>
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="sans-serif-medium"
+            android:paddingVertical="10dp"
+            android:text="Ver"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/CerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="8dp"
+        android:text="Cerrar Sesión"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TarjetaCancelacion"
+        app:layout_constraintVertical_bias="0.923" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
